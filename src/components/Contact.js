@@ -4,7 +4,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const GetInTouch = () => {
   return (
-    <section className="bg-gray-900 py-16 px-4">
+    <section className="bg-gray-900 py-16 ">
       <div className="max-w-7xl mx-auto text-center text-white">
         <h2
           className="text-3xl mb-12 font-light tracking-wide"

@@ -15,7 +15,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GetInTouch from "@/components/Contact";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
-
+import Calendly from "@/components/Calendly";
 
 
 
@@ -44,7 +44,7 @@ export default function Home() {
 
 
   return (
-    <div className="relative box-border overflow-x-hidden bg-black text-black font-montserrat" id="home">
+    <div className="relative box-border overflow-x-hidden overflow-y-hidden bg-black text-black font-montserrat" id="home">
       <Header />
       <div className="relative w-full lg:h-[90vh] h-[50vh] flex items-center justify-center" >
 
@@ -55,7 +55,7 @@ export default function Home() {
           className="object-cover"
           priority
         />
-        <div className="absolute w-full h-full overflow-hidden">
+        <div className="absolute w-full h-full">
 
           <div className="absolute inset-0 flex items-center justify-center bg-black/50">
             <Swiper
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 w-full flex justify-center">
-              <div className="relative  overflow-hidden shadow-lg w-72 h-72 lg:w-96 lg:h-96">
+              <div className="relative   shadow-lg w-72 h-72 lg:w-96 lg:h-96">
                 <Image
                   src="/about.png"
                   alt="About Us"
@@ -303,7 +303,7 @@ export default function Home() {
           </div>
         )}
       </section>
-
+      <Calendly />
       <GetInTouch />
 
     </div>
