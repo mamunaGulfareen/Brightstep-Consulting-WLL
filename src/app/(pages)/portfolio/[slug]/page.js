@@ -27,7 +27,7 @@ const ProjectPage = () => {
     return (
         <>
             <Header />
-            <section className="bg-black text-white py-16 px-6 lg:px-12">
+            <section className="bg-gray-950 text-white py-16 px-6 lg:px-12">
                 <div className="max-w-5xl mx-auto text-center">
                     <h1 className="text-4xl lg:text-5xl font-bold mb-4">{project.title}</h1>
                     <p className="text-lg text-gray-300">{project.tagline}</p>
@@ -44,7 +44,7 @@ const ProjectPage = () => {
             {project.sections.map((sec, i) => (
                 <section
                     key={i}
-                    className={`py-12 px-4 md:px-8 lg:px-16 ${i % 2 === 1 ? "bg-[#eff5ff]" : "bg-white"
+                    className={`py-12 px-4 md:px-8 lg:px-16 ${i % 2 === 1 ? "bg-gray-900" : "bg-black"
                         }`}
                     data-aos="fade-up"
                     data-aos-delay={100 + i * 200}
@@ -61,10 +61,10 @@ const ProjectPage = () => {
                             />
                         </div>
                         <div className="w-full md:w-1/2">
-                            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                            <h2 className="text-3xl font-bold text-white mb-4">
                                 {sec.heading}
                             </h2>
-                            <p className="text-gray-600 text-lg leading-relaxed">{sec.text}</p>
+                            <p className="text-white text-lg leading-relaxed">{sec.text}</p>
                         </div>
                     </div>
                 </section>
@@ -86,7 +86,7 @@ const ProjectPage = () => {
             </section>
             <Calendly />
             <GetInTouch />
-            <Footer/>
+            <Footer />
         </>
     );
 };
