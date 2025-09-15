@@ -175,7 +175,8 @@ export default function Home() {
                   src="/about.png"
                   alt="About Us"
                   fill={true}
-                  className="hover:scale-105 object-fill transition-transform duration-300 "
+                  className="hover:scale-105 object-contain
+ transition-transform duration-300 "
                 />
               </div>
             </div>
