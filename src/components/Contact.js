@@ -25,7 +25,7 @@ const GetInTouch = () => {
               <FaPhoneAlt className="text-blue-400 text-2xl mt-1 hover:animate-pulse" />
               <div>
                 <h4 className="font-medium text-gray-200">Pakistan</h4>
-                <p className="text-gray-400">(+92) 322 421 8770</p>
+                <p className="text-gray-400">(+92) 325 443 8897</p>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ const GetInTouch = () => {
                     href="mailto:javedadeel52@gmail.com"
                     className="text-gray-400 hover:text-white hover:underline"
                   >
-                    javedadeel52@gmail.com
+                    info@brightstepconsulting.com
                   </a>
                 </p>
               </div>
@@ -53,7 +53,7 @@ const GetInTouch = () => {
             <div className="flex items-start space-x-4 mb-4">
               <FaMapMarkerAlt className="text-green-400 text-2xl mt-1 hover:animate-pulse" />
               <p className="text-gray-400 leading-relaxed">
-                581 C, 3rd floor, OPF Society, Lahore, Pakistan
+                Lahore, Pakistan
               </p>
             </div>
           </div>

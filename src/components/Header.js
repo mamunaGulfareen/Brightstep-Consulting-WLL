@@ -2,8 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { FaFilePdf } from "react-icons/fa";
+
 import { usePathname } from 'next/navigation';
 
 
@@ -65,7 +64,9 @@ export default function Header() {
     { name: "Home", link: "/" },
     { name: "Our Services", link: "/#services" },
     { name: "About Us", link: "/#about" },
+    { name: "Portfolio", link: "/portfolio" },
     { name: "Contact", link: "/#contact" },
+    
   ];
 
   const showlinks = (e) => {

@@ -9,7 +9,7 @@ function Calendly() {
         document.body.appendChild(script);
     }, []);
     return (
-        <div id="calendly" className="w-full h-[780px] lg:mb-0 mb-8 relative">
+        <div id="calendly" className="w-full h-[780px] lg:mb-0 mb-8 mt-8 relative">
             <h2
             className="text-4xl font-extrabold text-center text-[#005dac] mb-6"
             data-aos="fade-up"

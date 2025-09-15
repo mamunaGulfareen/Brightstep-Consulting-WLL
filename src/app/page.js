@@ -16,7 +16,7 @@ import "slick-carousel/slick/slick-theme.css";
 import GetInTouch from "@/components/Contact";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import Calendly from "@/components/Calendly";
-
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -305,7 +305,7 @@ export default function Home() {
       </section>
       <Calendly />
       <GetInTouch />
-
+      <Footer />
     </div>
   );
 }
