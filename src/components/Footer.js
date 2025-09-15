@@ -28,11 +28,7 @@ const Footer = () => {
                                     Home
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="/portfolio" className="hover:text-blue-500 transition">
-                                    Portfolio
-                                </Link>
-                            </li>
+                            
                             <li>
                                 <a href="/about" className="hover:text-blue-500 transition">
                                     About
