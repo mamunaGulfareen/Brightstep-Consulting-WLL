@@ -17,8 +17,7 @@ import GetInTouch from "@/components/Contact";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import Calendly from "@/components/Calendly";
 import Footer from "@/components/Footer";
-
-
+import ClientCarousel from "@/components/Client";
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedService, setSelectedService] = useState("");
@@ -176,13 +175,15 @@ export default function Home() {
                   alt="About Us"
                   fill={true}
                   className="hover:scale-105 object-contain
- transition-transform duration-300 "
+                  transition-transform duration-300 "
                 />
               </div>
             </div>
           </div>
         </div>
       </section>
+      
+      <ClientCarousel/>
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-6 lg:px-12 text-center">
           <h2 className="text-4xl font-bold text-[#005dac] mb-12">

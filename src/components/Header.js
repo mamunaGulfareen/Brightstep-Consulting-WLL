@@ -77,7 +77,6 @@ export default function Header() {
     { name: "Home", link: "/" },
     { name: "Our Services", link: "/#services" },
     { name: "About Us", link: "/#about" },
-    { name: "Portfolio", link: "/portfolio" },
     { name: "Contact", link: "/#contact" },
 
   ];

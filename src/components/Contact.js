@@ -24,8 +24,10 @@ const GetInTouch = () => {
             <div className="flex items-start space-x-4 mb-4">
               <FaPhoneAlt className="text-blue-400 text-2xl mt-1 hover:animate-pulse" />
               <div>
-                <h4 className="font-medium text-gray-200">Pakistan</h4>
-                <p className="text-gray-400">(+92) 325 443 8897</p>
+                <h4 className="font-medium text-gray-200">Bahrain</h4>
+                <p className="text-gray-400">
+                  +973 38303637 / +973 35393799
+                </p>
               </div>
             </div>
           </div>
@@ -53,7 +55,7 @@ const GetInTouch = () => {
             <div className="flex items-start space-x-4 mb-4">
               <FaMapMarkerAlt className="text-green-400 text-2xl mt-1 hover:animate-pulse" />
               <p className="text-gray-400 leading-relaxed">
-                Lahore, Pakistan
+               Building 747, Road 1124, Manama/Salmaniya  311, Office no 2158
               </p>
             </div>
           </div>
