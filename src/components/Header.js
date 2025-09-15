@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from 'next/navigation';
 
 
@@ -126,14 +125,9 @@ export default function Header() {
             }`}
         >
           <Link href="/" className="text-lg text-white">
-            <Image
-              src="/brand-logo.webp"
-              alt="Header Background"
-              width={100}
-              height={100}
-          
-            />
-
+            <h2 className="text-xl md:text-2xl font-bold">
+              Brightstep Consulting WLL
+            </h2>
           </Link>
           <div className="md:hidden my-auto">
             <button
