@@ -39,6 +39,31 @@ export default function Home() {
       once: true,
     });
   }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+    handleClose();
+
+    navigator.clipboard.writeText("+97338303637").catch(console.error);
+
+    const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = "tel:+97338303637";
+    } else {
+      alert("Thank you for your request. We’ll redirect you shortly to call us.");
+
+      setTimeout(() => {
+        window.location.href = "tel:+97338303637";
+
+        setTimeout(() => {
+          alert("If your device did not open the dialer, please call us manually at +973 3830 3637.");
+        }, 1500);
+      }, 1000);
+
+    }
+  };
 
 
 
@@ -145,12 +170,12 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 w-full flex justify-center">
-              <div className="relative   shadow-lg w-72 h-72 lg:w-96 lg:h-96">
+              <div className="relative  shadow-lg w-72 h-72 lg:w-96 lg:h-96">
                 <Image
                   src="/about.png"
                   alt="About Us"
                   fill={true}
-                  className="hover:scale-105 transition-transform duration-300"
+                  className="hover:scale-105 object-fill transition-transform duration-300 "
                 />
               </div>
             </div>
@@ -276,21 +301,24 @@ export default function Home() {
                 </span>
               </p>
 
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
                   placeholder="Your Name"
                   className="w-full p-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-[#005dac] outline-none"
+                  required
                 />
                 <input
                   type="email"
                   placeholder="Your Email"
                   className="w-full p-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-[#005dac] outline-none"
+                  required
                 />
                 <textarea
                   rows={4}
                   placeholder="Your Message"
                   className="w-full p-3 rounded-lg bg-gray-800 text-white focus:ring-2 focus:ring-[#005dac] outline-none"
+                  required
                 ></textarea>
                 <button
                   type="submit"
@@ -299,6 +327,7 @@ export default function Home() {
                   Submit Request
                 </button>
               </form>
+
             </div>
           </div>
         )}

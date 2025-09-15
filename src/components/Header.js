@@ -30,7 +30,20 @@ export default function Header() {
             setBase(false);
             setSmall(true);
           }
-        } else if (pathname.startsWith('/services/')) {
+        } else if (pathname.startsWith('/portfolio')) {
+
+          setSmall(window.pageYOffset <= 300);
+          setBorder(window.pageYOffset > 200);
+          if (window.pageYOffset > 400 && window.pageYOffset < 600) {
+            setBase(true);
+            setSmall(false);
+            setOffset(window.pageYOffset / 70);
+          } else if (window.pageYOffset <= 400) {
+            setBase(false);
+            setSmall(true);
+          }
+        }
+        if (pathname.startsWith('/portfolio/')) {
 
           setSmall(window.pageYOffset <= 300);
           setBorder(window.pageYOffset > 200);
@@ -66,7 +79,7 @@ export default function Header() {
     { name: "About Us", link: "/#about" },
     { name: "Portfolio", link: "/portfolio" },
     { name: "Contact", link: "/#contact" },
-    
+
   ];
 
   const showlinks = (e) => {

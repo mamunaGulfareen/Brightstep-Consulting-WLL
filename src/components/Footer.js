@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
@@ -9,7 +10,10 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
                     <div>
-                        <h2 className="text-xl font-bold text-white mb-4">Brightstep Consulting WLL</h2>
+                        <h2 className="text-xl font-bold text-white mb-2">Brightstep Consulting WLL</h2>
+                        <p className="text-white text-lg mb-2">
+                            Your Success Our Commitment
+                        </p>
                         <p className="text-gray-400 text-sm">
                             We build innovative digital solutions to help businesses grow,
                             scale, and stand out in today’s fast-moving world.
