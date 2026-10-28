@@ -40,7 +40,7 @@ const GetInTouch = () => {
                 <h4 className="font-medium text-gray-200">Mail us</h4>
                 <p>
                   <a
-                    href="mailto:javedadeel52@gmail.com"
+                    href="mailto:mamunagulfareen@gmail.com"
                     className="text-gray-400 hover:text-white hover:underline"
                   >
                     info@brightstepconsulting.com
